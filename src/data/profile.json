@@ -1,0 +1,491 @@
+{
+  "hero": {
+    "name": "Semachew Molla Kassa",
+    "title": "Assistant Professor & Lead AI Researcher",
+    "subtitle": "Computer Science & Artificial Intelligence",
+    "institution": "School of Electrical Engineering & Computer Science",
+    "department": "Department of Computer Science",
+    "tagline": "Pioneering Trustworthy Artificial Intelligence, Graph Neural Networks, and Distributed Machine Learning for Real-World Impact.",
+    "bioBrief": "I conduct cutting-edge research at the intersection of Explainable AI (XAI), Privacy-Preserving Federated Learning, and Multimodal Deep Learning to build reliable and equitable intelligent systems.",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
+    "cvUrl": "#contact",
+    "socials": {
+      "googleScholar": "https://scholar.google.com",
+      "orcid": "https://orcid.org",
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com",
+      "researchGate": "https://researchgate.net",
+      "twitter": "https://x.com",
+      "email": "semachew.kassa@academic.edu"
+    },
+    "highlights": [
+      { "label": "Citations", "value": "1,450+" },
+      { "label": "h-index", "value": "19" },
+      { "label": "Publications", "value": "35+" },
+      { "label": "Open Source Stars", "value": "2.8k+" }
+    ]
+  },
+  "about": {
+    "biography": [
+      "Semachew Molla Kassa is an Assistant Professor and Director of the Trustworthy AI Research Lab in the Department of Computer Science. His foundational research focuses on developing transparent, privacy-preserving, and computationally efficient machine learning models capable of operating robustly in complex, high-stakes environments.",
+      "His recent inquiries focus on Graph Neural Networks (GNNs) for biomedical network analysis, federated multi-agent learning architectures, and explainable deep learning representations for natural language processing.",
+      "Prior to his current academic appointment, Dr. Kassa served as a Senior Research Scientist at leading AI research labs and earned his Ph.D. in Computer Science with a specialization in Machine Learning and Data Science. He actively serves as an Associate Editor and PC Member for top-tier international conferences including NeurIPS, ICML, ICLR, and IEEE TPAMI."
+    ],
+    "education": [
+      {
+        "degree": "Ph.D. in Computer Science & Artificial Intelligence",
+        "field": "Machine Learning & Distributed Systems",
+        "institution": "Institute of Advanced Computer Science",
+        "year": "2018 - 2022",
+        "thesis": "Privacy-Preserving and Interpretable Federated Learning on Heterogeneous Graph Networks",
+        "advisor": "Prof. Elena Vance"
+      },
+      {
+        "degree": "M.Sc. in Computer Science & Software Engineering",
+        "field": "Data Science & Intelligent Systems",
+        "institution": "National University of Technology",
+        "year": "2015 - 2017",
+        "thesis": "Scalable Deep Graph Representations for Complex Social Networks"
+      },
+      {
+        "degree": "B.Sc. in Computer Science",
+        "field": "Software Engineering & Algorithms",
+        "institution": "Addis Ababa University",
+        "year": "2010 - 2014",
+        "thesis": "Distributed Parallel Processing Frameworks for High-Volume Text Datasets"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Assistant Professor & Principal Investigator",
+        "organization": "School of Computer Science & AI",
+        "location": "Academic Campus",
+        "period": "2023 - Present",
+        "description": [
+          "Leading a team of 6 PhD students and postdoctoral fellows in trustworthy machine learning research.",
+          "Secured $1.2M+ in competitive research grants from national science foundations and industrial partners.",
+          "Teaching graduate-level courses: Advanced Deep Learning, Graph Neural Networks, and Distributed AI."
+        ],
+        "type": "academic"
+      },
+      {
+        "role": "Postdoctoral Research Fellow",
+        "organization": "Center for AI & Data Ethics",
+        "location": "Research Triangle Park",
+        "period": "2022 - 2023",
+        "description": [
+          "Designed privacy-utility Pareto optimal algorithms for cross-silo federated learning in healthcare networks.",
+          "Co-authored 6 papers accepted in NeurIPS, ICML, and IEEE Transactions on Neural Networks."
+        ],
+        "type": "research"
+      },
+      {
+        "role": "Senior AI Research Scientist (Consultant)",
+        "organization": "Applied Machine Intelligence Lab",
+        "location": "Tech Hub",
+        "period": "2020 - 2022",
+        "description": [
+          "Developed explainability pipelines (XAI) for multi-modal clinical diagnostic models.",
+          "Published open-source benchmarking toolkits utilized by over 40 research organizations worldwide."
+        ],
+        "type": "industry"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Core Research Specialties",
+        "items": ["Explainable AI (XAI)", "Federated Learning", "Graph Neural Networks (GNN)", "Multimodal AI", "Privacy-Preserving ML", "NLP"]
+      },
+      {
+        "category": "Frameworks & Libraries",
+        "items": ["PyTorch", "PyTorch Geometric", "TensorFlow", "Hugging Face Transformers", "Ray Tune", "Scikit-Learn"]
+      },
+      {
+        "category": "Languages & Systems",
+        "items": ["Python", "TypeScript", "C++", "CUDA", "R", "SQL", "Docker", "Kubernetes", "Git"]
+      },
+      {
+        "category": "Academic & Scientific Services",
+        "items": ["NeurIPS PC Member", "ICML Reviewer", "IEEE TPAMI Associate Editor", "Grant Reviewer", "Ph.D. Advisor"]
+      }
+    ]
+  },
+  "research": {
+    "areas": [
+      {
+        "id": "xai",
+        "title": "Explainable & Trustworthy AI",
+        "icon": "ShieldCheck",
+        "summary": "Developing mathematically grounded explanation mechanisms for complex deep neural networks.",
+        "description": "Our lab investigates how neural representations can be decoded into human-comprehensible concepts. We focus on counterfactual explanations, feature attribution stability, and causal discovery algorithms for high-stakes decision domains.",
+        "topics": ["Counterfactual Analysis", "Feature Attribution", "Causal Deep Learning", "Model Debugging"]
+      },
+      {
+        "id": "federated",
+        "title": "Privacy-Preserving Federated Learning",
+        "icon": "Lock",
+        "summary": "Architecting distributed machine learning systems that preserve data privacy without sacrificing model performance.",
+        "description": "We address non-IID data heterogeneity, communication bottlenecks, and differential privacy guarantees in multi-institutional federated learning setups across healthcare and IoT systems.",
+        "topics": ["Differential Privacy", "Secure Aggregation", "Non-IID Heterogeneity", "Edge Computing"]
+      },
+      {
+        "id": "gnn",
+        "title": "Deep Graph Learning & Geometric Deep Learning",
+        "icon": "Network",
+        "summary": "Building scalable neural networks designed for non-Euclidean graph structures and dynamic networks.",
+        "description": "Focusing on spatio-temporal graph convolutions, heterogeneous graph transformers, and topological neural networks applied to bio-molecular structures and knowledge graphs.",
+        "topics": ["Graph Transformers", "Heterogeneous Graphs", "Spatio-Temporal GNNs", "Knowledge Graphs"]
+      },
+      {
+        "id": "multimodal",
+        "title": "Multimodal Retrieval & Reasoning",
+        "icon": "Layers",
+        "summary": "Cross-modal alignment between vision, structured graphs, and natural language representations.",
+        "description": "Exploring retrieval-augmented generation (RAG), parameter-efficient fine-tuning (PEFT), and unified multimodal models tailored for low-resource languages and scientific literature synthesis.",
+        "topics": ["Multimodal Alignment", "RAG Systems", "Low-Resource NLP", "Vision-Language Models"]
+      }
+    ],
+    "projects": [
+      {
+        "id": "proj-1",
+        "title": "FedTrust: Robust & Private Federated Graph Neural Networks",
+        "areaId": "federated",
+        "status": "ongoing",
+        "period": "2024 - 2027",
+        "role": "Principal Investigator",
+        "funding": "National AI Research Grant ($550,000)",
+        "summary": "Designing differential privacy frameworks for heterogeneous graph representations in multi-site clinical diagnostic networks.",
+        "outcomes": [
+          "Published 2 IEEE TPAMI papers on non-IID graph aggregation.",
+          "Released open-source FedTrust Python library with 800+ GitHub stars.",
+          "Partnering with 5 regional research hospitals."
+        ],
+        "collaborators": ["BioHealth Lab", "Stanford AI Institute", "ETH Zürich AI Center"],
+        "link": "https://github.com"
+      },
+      {
+        "id": "proj-2",
+        "title": "X-NeuroGraph: Interpretability Pipelines for Brain Connectivity Networks",
+        "areaId": "xai",
+        "status": "ongoing",
+        "period": "2023 - 2026",
+        "role": "Lead Researcher",
+        "funding": "Interdisciplinary Health-Tech Award ($420,000)",
+        "summary": "Extracting inspectable network motifs and subgraphs from functional MRI graph neural network classifiers.",
+        "outcomes": [
+          "Identified novel neurological markers for early disease detection.",
+          "Demonstrated 94.2% diagnostic fidelity with human-in-the-loop validation."
+        ],
+        "collaborators": ["NeuroImage Research Institute", "Global Health Consortium"],
+        "link": "https://github.com"
+      },
+      {
+        "id": "proj-3",
+        "title": "EthioNLP-Multimodal: Low-Resource Language Benchmarks",
+        "areaId": "multimodal",
+        "status": "completed",
+        "period": "2022 - 2024",
+        "role": "Co-PI",
+        "funding": "Global Language Inclusion Fund ($250,000)",
+        "summary": "Building standardized datasets, tokenizers, and benchmark suites for Horn of Africa languages.",
+        "outcomes": [
+          "Curated 5 core dataset benchmarks published at ACL 2023.",
+          "Adopted by international NLP research groups worldwide."
+        ],
+        "collaborators": ["Addis Ababa University", "African NLP Research Collective"]
+      }
+    ],
+    "impact": {
+      "citationsTotal": 1450,
+      "hIndex": 19,
+      "i10Index": 28,
+      "grantsSecured": "$1.2M+",
+      "collaboratingInstitutions": 14,
+      "peerReviews": 120
+    }
+  },
+  "publications": [
+    {
+      "id": "pub-2025-1",
+      "title": "Provably Fair and Private Federated Graph Learning via Optimal Transport",
+      "authors": ["Semachew Molla Kassa", "Elena Vance", "Marcus Reynolds", "David Chen"],
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+      "year": 2025,
+      "type": "journal",
+      "doi": "10.1109/TPAMI.2025.3341092",
+      "pdfUrl": "#",
+      "codeUrl": "https://github.com",
+      "citations": 14,
+      "abstract": "We present a unified optimal transport formulation for federated graph learning under heterogeneous domain shifts. Our method proves strict local privacy guarantees while bounding empirical accuracy degradation to under 1.8% compared to centralized training.",
+      "bibtex": "@article{kassa2025provably,\n  title={Provably Fair and Private Federated Graph Learning via Optimal Transport},\n  author={Kassa, Semachew Molla and Vance, Elena and Reynolds, Marcus and Chen, David},\n  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},\n  year={2025},\n  publisher={IEEE}\n}",
+      "tags": ["Federated Learning", "Graph Neural Networks", "Differential Privacy", "Optimal Transport"],
+      "featured": true
+    },
+    {
+      "id": "pub-2024-1",
+      "title": "Counterfactual Subgraph Explanations for Deep Graph Neural Networks",
+      "authors": ["Semachew Molla Kassa", "Sophia Martinez", "Alexander Wright"],
+      "venue": "Advances in Neural Information Processing Systems (NeurIPS 2024)",
+      "year": 2024,
+      "type": "conference",
+      "doi": "10.48550/arXiv.2405.09182",
+      "pdfUrl": "#",
+      "codeUrl": "https://github.com",
+      "citations": 42,
+      "abstract": "Graph neural network explanations frequently generate disconnected or unfeasible subgraphs. We propose SubgraphX-CF, a discrete optimization algorithm that guarantees connected, causal counterfactual explanations for molecular and social graphs.",
+      "bibtex": "@inproceedings{kassa2024counterfactual,\n  title={Counterfactual Subgraph Explanations for Deep Graph Neural Networks},\n  author={Kassa, Semachew Molla and Martinez, Sophia and Wright, Alexander},\n  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},\n  year={2024}\n}",
+      "tags": ["Explainable AI", "Graph Neural Networks", "Counterfactuals", "NeurIPS"],
+      "featured": true
+    },
+    {
+      "id": "pub-2024-2",
+      "title": "Differential Privacy Bottlenecks in Multi-Agent Autonomous Systems",
+      "authors": ["Daniel Bekele", "Semachew Molla Kassa", "Julian Thorne"],
+      "venue": "International Conference on Machine Learning (ICML 2024)",
+      "year": 2024,
+      "type": "conference",
+      "doi": "10.48550/arXiv.2406.12091",
+      "pdfUrl": "#",
+      "codeUrl": "https://github.com",
+      "citations": 28,
+      "abstract": "In multi-agent reinforcement learning, differential privacy noise quickly destabilizes cooperative policy convergence. We establish dynamic noise decay bounds that preserve convergence speed.",
+      "bibtex": "@inproceedings{bekele2024differential,\n  title={Differential Privacy Bottlenecks in Multi-Agent Autonomous Systems},\n  author={Bekele, Daniel and Kassa, Semachew Molla and Thorne, Julian},\n  booktitle={International Conference on Machine Learning (ICML)},\n  year={2024}\n}",
+      "tags": ["Differential Privacy", "Multi-Agent Systems", "Reinforcement Learning", "ICML"]
+    },
+    {
+      "id": "pub-2023-1",
+      "title": "Trustworthy Artificial Intelligence: Principles, Architectures, and Applications",
+      "authors": ["Semachew Molla Kassa", "Elena Vance"],
+      "venue": "Springer Nature Academic Publishing (Monograph Series)",
+      "year": 2023,
+      "type": "book",
+      "doi": "10.1007/978-3-031-19283-1",
+      "pdfUrl": "#",
+      "citations": 88,
+      "abstract": "A comprehensive textbook detailing foundational algorithms for interpretable machine learning, robust defense against adversarial attacks, and ethical AI deployment frameworks.",
+      "bibtex": "@book{kassa2023trustworthy,\n  title={Trustworthy Artificial Intelligence: Principles, Architectures, and Applications},\n  author={Kassa, Semachew Molla and Vance, Elena},\n  year={2023},\n  publisher={Springer Nature}\n}",
+      "tags": ["Trustworthy AI", "Textbook", "Explainability", "Ethics in AI"],
+      "featured": true
+    },
+    {
+      "id": "pub-2023-2",
+      "title": "Multimodal Cross-Attention Alignment for Low-Resource Languages",
+      "authors": ["Semachew Molla Kassa", "Tewodros Alemu", "Kibrom Assefa"],
+      "venue": "Association for Computational Linguistics (ACL 2023)",
+      "year": 2023,
+      "type": "conference",
+      "doi": "10.18653/v1/2023.acl-long.412",
+      "pdfUrl": "#",
+      "codeUrl": "https://github.com",
+      "citations": 65,
+      "abstract": "Cross-lingual transfer learning often degrades on morphologically rich low-resource languages. We introduce cross-attention adapter modules that leverage audio-text co-embedding.",
+      "bibtex": "@inproceedings{kassa2023multimodal,\n  title={Multimodal Cross-Attention Alignment for Low-Resource Languages},\n  author={Kassa, Semachew Molla and Alemu, Tewodros and Assefa, Kibrom},\n  booktitle={Proceedings of the Association for Computational Linguistics (ACL)},\n  year={2023}\n}",
+      "tags": ["NLP", "Multimodal", "Low-Resource Languages", "ACL"]
+    },
+    {
+      "id": "pub-2022-1",
+      "title": "Spatio-Temporal Graph Neural Networks for Epidemic Spread Dynamics",
+      "authors": ["Semachew Molla Kassa", "Marcus Reynolds", "David Chen"],
+      "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022)",
+      "year": 2022,
+      "type": "conference",
+      "doi": "10.1145/3534678.3539201",
+      "pdfUrl": "#",
+      "citations": 112,
+      "abstract": "Predicting regional epidemic transmission requires modeling human mobility graphs alongside temporal infection counts. We propose ST-GNN with dynamic attention weights.",
+      "bibtex": "@inproceedings{kassa2022spatio,\n  title={Spatio-Temporal Graph Neural Networks for Epidemic Spread Dynamics},\n  author={Kassa, Semachew Molla and Reynolds, Marcus and Chen, David},\n  booktitle={ACM SIGKDD Conference on Knowledge Discovery and Data Mining},\n  year={2022}\n}",
+      "tags": ["Spatio-Temporal GNN", "Epidemiology Modeling", "KDD", "Data Science"]
+    }
+  ],
+  "team": [
+    {
+      "id": "team-1",
+      "name": "Daniel Bekele",
+      "role": "Ph.D. Candidate",
+      "degreeTrack": "Ph.D. in Computer Science (4th Year)",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+      "bio": "Focusing on differential privacy in multi-agent reinforcement learning systems and secure federated aggregation algorithms.",
+      "researchFocus": ["Differential Privacy", "Multi-Agent Systems", "Federated Optimization"],
+      "email": "daniel.b@academic.edu",
+      "socials": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "googleScholar": "https://scholar.google.com"
+      }
+    },
+    {
+      "id": "team-2",
+      "name": "Sophia Martinez",
+      "role": "Ph.D. Candidate",
+      "degreeTrack": "Ph.D. in AI & Data Science (3rd Year)",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
+      "bio": "Investigating graph neural network interpretability methods, counterfactual subgraphs, and causal feature attribution in molecular biology.",
+      "researchFocus": ["Graph Neural Networks", "Explainable AI", "Bioinformatics"],
+      "email": "sophia.m@academic.edu",
+      "socials": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com"
+      }
+    },
+    {
+      "id": "team-3",
+      "name": "Dr. Alexander Wright",
+      "role": "Postdoctoral Researcher",
+      "degreeTrack": "Ph.D. in Computer Science",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+      "bio": "Leading research on geometric deep learning and hypergraph representations for complex multi-modal sensor fusion.",
+      "researchFocus": ["Geometric Deep Learning", "Hypergraphs", "Multimodal Sensor Fusion"],
+      "email": "alex.wright@academic.edu",
+      "socials": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "googleScholar": "https://scholar.google.com"
+      }
+    },
+    {
+      "id": "team-4",
+      "name": "Bethlehem Worku",
+      "role": "M.Sc. Research Assistant",
+      "degreeTrack": "M.Sc. in Data Science",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
+      "bio": "Working on benchmark dataset curation and parameter-efficient fine-tuning (PEFT) for Amharic and Ge'ez language models.",
+      "researchFocus": ["NLP", "LLM Benchmarking", "Parameter-Efficient Fine-Tuning"],
+      "email": "b.worku@academic.edu",
+      "socials": {
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com"
+      }
+    }
+  ],
+  "news": [
+    {
+      "id": "news-1",
+      "title": "Paper Accepted at IEEE TPAMI 2025",
+      "date": "February 2025",
+      "category": "Publication",
+      "summary": "Our work titled 'Provably Fair and Private Federated Graph Learning via Optimal Transport' has been officially accepted for publication in IEEE TPAMI.",
+      "link": "#publications"
+    },
+    {
+      "id": "news-2",
+      "title": "Awarded $550,000 National AI Research Grant for FedTrust",
+      "date": "November 2024",
+      "category": "Grant",
+      "summary": "Dr. Semachew Molla Kassa has been awarded a 3-year research grant to investigate privacy-preserving federated graph learning in medical networks."
+    },
+    {
+      "id": "news-3",
+      "title": "Keynote Speaker at International Conference on Trustworthy ML (ICTML)",
+      "date": "September 2024",
+      "category": "Conference",
+      "summary": "Delivered an invited keynote presentation on 'Counterfactual Reasoning in Deep Graph Neural Networks' in Geneva, Switzerland."
+    },
+    {
+      "id": "news-4",
+      "title": "NeurIPS 2024 Paper Acceptance & Spotlight",
+      "date": "August 2024",
+      "category": "Award",
+      "summary": "Our paper 'Counterfactual Subgraph Explanations' received a spotlight designation at NeurIPS 2024."
+    },
+    {
+      "id": "news-5",
+      "title": "Elevated to IEEE Senior Member",
+      "date": "May 2024",
+      "category": "Award",
+      "summary": "Dr. Kassa was recognized as an IEEE Senior Member for significant contributions to trustworthy AI and distributed machine learning."
+    }
+  ],
+  "codeProjects": [
+    {
+      "id": "repo-1",
+      "title": "fed-privacy-bench",
+      "description": "Comprehensive PyTorch benchmarking suite for privacy-preserving federated learning algorithms under non-IID data distributions.",
+      "stars": 1240,
+      "forks": 210,
+      "language": "Python",
+      "tags": ["PyTorch", "Federated Learning", "Differential Privacy", "Benchmark"],
+      "githubUrl": "https://github.com",
+      "demoUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "repo-2",
+      "title": "graph-explain-x",
+      "description": "Official implementation of SubgraphX-CF and model-agnostic explainability tools for PyTorch Geometric (PyG) networks.",
+      "stars": 890,
+      "forks": 145,
+      "language": "Python",
+      "tags": ["PyTorch Geometric", "XAI", "Counterfactuals", "Graph Neural Networks"],
+      "githubUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "repo-3",
+      "title": "ethiopian-nlp-datasets",
+      "description": "Curated parallel text and multimodal datasets for Ethiopian and Horn of Africa languages with standardized preprocessing pipelines.",
+      "stars": 460,
+      "forks": 85,
+      "language": "Python",
+      "tags": ["NLP", "Amharic", "Datasets", "HuggingFace"],
+      "githubUrl": "https://github.com",
+      "featured": true
+    },
+    {
+      "id": "repo-4",
+      "title": "multimodal-academic-rag",
+      "description": "Lightweight, local-first RAG pipeline designed to index PDF scientific literature, BibTeX metadata, and mathematical equations.",
+      "stars": 320,
+      "forks": 50,
+      "language": "TypeScript",
+      "tags": ["Next.js", "LangChain", "Vector DB", "Academic RAG"],
+      "githubUrl": "https://github.com"
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Counterfactual Subgraph Reasoning in Deep Neural Networks",
+      "event": "NeurIPS Conference Keynote Presentation",
+      "date": "December 2024",
+      "type": "Paper Presentation",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop",
+      "duration": "25:40",
+      "description": "Explaining the mathematical foundations of connected counterfactual subgraphs and performance benchmarks on PyTorch Geometric.",
+      "slidesUrl": "#"
+    },
+    {
+      "id": "vid-2",
+      "title": "Tutorial: Building Privacy-Preserving Federated Graph Models",
+      "event": "International Summer School on Distributed AI",
+      "date": "July 2024",
+      "type": "Tutorial",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop",
+      "duration": "48:15",
+      "description": "Hands-on tutorial walking through FedTrust code architecture, secure aggregation protocols, and noise budget calibration.",
+      "slidesUrl": "#"
+    },
+    {
+      "id": "vid-3",
+      "title": "Trustworthy AI in High-Stakes Decision Making",
+      "event": "Global AI Ethics Symposium",
+      "date": "March 2024",
+      "type": "Keynote",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop",
+      "duration": "35:10",
+      "description": "Addressing algorithmic bias, accountability, and practical explainability frameworks for healthcare and financial systems.",
+      "slidesUrl": "#"
+    }
+  ],
+  "contact": {
+    "email": "semachew.kassa@academic.edu",
+    "office": "Room 412, Turing Hall",
+    "building": "Computer Science & Engineering Building",
+    "institution": "School of Electrical Engineering & Computer Science",
+    "address": "100 Innovation Parkway, Academic Campus, Science District",
+    "officeHours": "Tuesday & Thursday: 14:00 - 16:30 (or by appointment)",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192842426913!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f00000000%3A0x0!2zMzfCsDQ2JzfdLjciTiAxMjLCsDI1JzA5LjkiVw!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+  }
+}
