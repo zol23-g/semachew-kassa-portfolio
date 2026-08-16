@@ -291,10 +291,266 @@
       "type": "conference",
       "doi": "10.1145/3534678.3539201",
       "pdfUrl": "#",
+      "codeUrl": "https://github.com",
       "citations": 112,
       "abstract": "Predicting regional epidemic transmission requires modeling human mobility graphs alongside temporal infection counts. We propose ST-GNN with dynamic attention weights.",
       "bibtex": "@inproceedings{kassa2022spatio,\n  title={Spatio-Temporal Graph Neural Networks for Epidemic Spread Dynamics},\n  author={Kassa, Semachew Molla and Reynolds, Marcus and Chen, David},\n  booktitle={ACM SIGKDD Conference on Knowledge Discovery and Data Mining},\n  year={2022}\n}",
       "tags": ["Spatio-Temporal GNN", "Epidemiology Modeling", "KDD", "Data Science"]
+    }
+  ],
+  "courses": [
+    {
+      "id": "gnn-masterclass",
+      "slug": "deep-graph-learning-masterclass",
+      "title": "Deep Graph Learning & Geometric Neural Networks",
+      "subtitle": "Master PyTorch Geometric (PyG), Graph Convolutional Networks, Graph Transformers, and Spatial-Temporal GNNs.",
+      "type": "paid",
+      "price": "$79.99",
+      "originalPrice": "$149.99",
+      "level": "Advanced",
+      "duration": "8 Weeks • 28 Hours Video",
+      "studentsEnrolled": 1420,
+      "rating": 4.9,
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+      "previewVideoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "summary": "An intensive graduate-level masterclass teaching hands-on graph representation learning, node classification, link prediction, and heterogeneous graph transformers.",
+      "description": "Graph Neural Networks (GNNs) represent the modern state-of-the-art in non-Euclidean machine learning. In this masterclass designed by Dr. Semachew Molla Kassa, you will learn the mathematical theory and practical PyTorch implementation of GCN, GAT, GraphSAGE, Heterogeneous GNNs, and Spectral Graph Convolutions.",
+      "learningOutcomes": [
+        "Implement custom GNN layers in PyTorch Geometric (PyG) from scratch.",
+        "Construct heterogeneous graph models for biomedical and molecular prediction.",
+        "Optimize large-scale graph sampling algorithms (GraphSAGE, Cluster-GCN).",
+        "Deploy GNN models to production cloud environments."
+      ],
+      "prerequisites": [
+        "Strong proficiency in Python & PyTorch fundamentals.",
+        "Basic understanding of linear algebra, matrix calculus, and graph theory."
+      ],
+      "curriculum": [
+        {
+          "title": "Module 1: Foundations of Graph Representation Learning",
+          "duration": "4 Hours",
+          "lessons": [
+            "Introduction to Graphs, Adjacency Matrices & Graph Laplacian",
+            "Node Embeddings: DeepWalk & Node2Vec",
+            "Spectral vs. Spatial Graph Convolutions"
+          ]
+        },
+        {
+          "title": "Module 2: PyTorch Geometric (PyG) Core Architecture",
+          "duration": "6 Hours",
+          "lessons": [
+            "Building GCN and Graph Attention Networks (GAT)",
+            "Handling Node, Edge, and Graph-Level Tasks",
+            "Custom Message Passing Interfaces in PyG"
+          ]
+        },
+        {
+          "title": "Module 3: Advanced Graph Transformers & Heterogeneous Graphs",
+          "duration": "8 Hours",
+          "lessons": [
+            "Heterogeneous Graph Neural Networks (HAN / HGT)",
+            "Graph Transformer Architectures & Positional Encodings",
+            "Scalable Graph Sampling: NeighborSampler & ClusterGCN"
+          ]
+        },
+        {
+          "title": "Module 4: Real-World Applications & Capstone Project",
+          "duration": "10 Hours",
+          "lessons": [
+            "Molecular Property Prediction for Drug Discovery",
+            "Fraud Detection in Financial Transaction Graphs",
+            "Final Capstone Project: Deploying FedTrust GNN Pipeline"
+          ]
+        }
+      ],
+      "buyUrl": "https://stripe.com",
+      "certificate": true,
+      "featured": true
+    },
+    {
+      "id": "intro-trustworthy-ai",
+      "slug": "trustworthy-ai-and-explainability",
+      "title": "Foundations of Trustworthy AI & Explainable ML (XAI)",
+      "subtitle": "Open-access university lecture series covering feature attributions, SHAP, LIME, and counterfactual debugging.",
+      "type": "free",
+      "price": "Free",
+      "level": "Intermediate",
+      "duration": "6 Weeks • 18 Hours Video",
+      "studentsEnrolled": 3850,
+      "rating": 4.8,
+      "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop",
+      "previewVideoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "summary": "An open academic course explaining how to audit, debug, and explain complex deep learning representations in high-stakes domain applications.",
+      "description": "As artificial intelligence systems are deployed in healthcare, finance, and criminal justice, model interpretability and fairness become paramount. This course covers state-of-the-art XAI techniques including Integrated Gradients, SHAP, Grad-CAM, and Counterfactual Explanations.",
+      "learningOutcomes": [
+        "Audit neural network predictions using SHAP and Integrated Gradients.",
+        "Generate actionable counterfactual explanations for tabular and graph models.",
+        "Evaluate algorithmic fairness, disparate impact, and group parity metrics.",
+        "Implement XAI pipelines for clinical decision support systems."
+      ],
+      "prerequisites": [
+        "Basic Python programming knowledge.",
+        "Familiarity with standard Machine Learning concepts (Scikit-Learn)."
+      ],
+      "curriculum": [
+        {
+          "title": "Module 1: The Trustworthy AI Paradigm",
+          "duration": "4 Hours",
+          "lessons": [
+            "Why Black-Box AI Fails in High-Stakes Domains",
+            "Taxonomy of Explainable AI (XAI) Methods",
+            "Model-Agnostic vs. Model-Specific Explanations"
+          ]
+        },
+        {
+          "title": "Module 2: Local & Feature Attribution Methods",
+          "duration": "6 Hours",
+          "lessons": [
+            "SHAP (Shapley Additive exPlanations) & Game Theory",
+            "Integrated Gradients & SmoothGrad for Neural Networks",
+            "Grad-CAM & Saliency Maps for Vision Transformers"
+          ]
+        },
+        {
+          "title": "Module 3: Counterfactual Explanations & Recourse",
+          "duration": "8 Hours",
+          "lessons": [
+            "Mathematical Formulation of Algorithmic Recourse",
+            "Counterfactual Subgraph Optimization in PyTorch",
+            "Ethical Guidelines & Governance for Deploying XAI"
+          ]
+        }
+      ],
+      "buyUrl": "#enroll-free",
+      "freeAccessUrl": "#enroll-free",
+      "certificate": true,
+      "featured": true
+    },
+    {
+      "id": "federated-learning-bootcamp",
+      "slug": "federated-learning-pytorch-bootcamp",
+      "title": "Privacy-Preserving Federated Learning Bootcamp",
+      "subtitle": "Build distributed cross-silo federated learning architectures using PyTorch, Flower, and Differential Privacy.",
+      "type": "paid",
+      "price": "$129.99",
+      "originalPrice": "$199.99",
+      "level": "Advanced",
+      "duration": "10 Weeks • 32 Hours Video",
+      "studentsEnrolled": 980,
+      "rating": 4.95,
+      "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+      "previewVideoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "summary": "Hands-on engineering bootcamp for training private models across decentralized client nodes without sharing raw data.",
+      "description": "Federated Learning enables collaborative model training on decentralized data silos while guaranteeing strict privacy. Learn FedAvg, FedProx, Differential Privacy (Opacus), and Secure Multi-Party Computation (SMPC).",
+      "learningOutcomes": [
+        "Design production-grade federated aggregation servers in Python.",
+        "Implement Differential Privacy noise calibration using PyTorch Opacus.",
+        "Solve Non-IID client drift challenges with FedProx and SCAFFOLD.",
+        "Benchmark federated algorithms under communication constraints."
+      ],
+      "prerequisites": [
+        "Intermediate PyTorch and distributed systems experience.",
+        "Understanding of probability theory and gradient descent."
+      ],
+      "curriculum": [
+        {
+          "title": "Module 1: Decentralized Machine Learning Foundations",
+          "duration": "6 Hours",
+          "lessons": [
+            "Centralized vs. Federated Learning Architectures",
+            "FedAvg (Federated Averaging) Algorithm Proofs",
+            "Simulating Client Silos in PyTorch"
+          ]
+        },
+        {
+          "title": "Module 2: Differential Privacy & Cryptography",
+          "duration": "10 Hours",
+          "lessons": [
+            "Formal Definition of (ε, δ)-Differential Privacy",
+            "Gaussian Mechanism & Rényi Differential Privacy",
+            "PyTorch Opacus for Differentially Private SGD"
+          ]
+        },
+        {
+          "title": "Module 3: Non-IID Data & Heterogeneity",
+          "duration": "8 Hours",
+          "lessons": [
+            "Quantifying Statistical Client Drift",
+            "FedProx, SCAFFOLD, and Personalized Federated Learning",
+            "Cross-Silo Medical Imaging Case Study"
+          ]
+        },
+        {
+          "title": "Module 4: Enterprise Production Deployment",
+          "duration": "8 Hours",
+          "lessons": [
+            "Deploying Federated Pipelines with Flower & Docker",
+            "Secure Aggregation Protocols & Homomorphic Encryption",
+            "Final Capstone Project & Certification"
+          ]
+        }
+      ],
+      "buyUrl": "https://stripe.com",
+      "certificate": true,
+      "featured": true
+    },
+    {
+      "id": "python-data-science-101",
+      "slug": "applied-machine-learning-data-science",
+      "title": "Applied Machine Learning & Data Science for Academics",
+      "subtitle": "Free foundational crash course in Python, NumPy, Pandas, Scikit-Learn, and scientific data visualization.",
+      "type": "free",
+      "price": "Free",
+      "level": "Beginner",
+      "duration": "4 Weeks • 12 Hours Video",
+      "studentsEnrolled": 5200,
+      "rating": 4.75,
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      "previewVideoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "summary": "Free self-paced crash course designed for graduate students and researchers starting their empirical data analysis journey.",
+      "description": "Master essential data manipulation, exploratory analysis, statistical testing, and machine learning model training in Python.",
+      "learningOutcomes": [
+        "Clean, transform, and analyze complex experimental datasets in Pandas.",
+        "Train classification and regression models using Scikit-Learn.",
+        "Produce publication-ready figures using Matplotlib and Seaborn.",
+        "Structure repeatable scientific research notebooks in Jupyter."
+      ],
+      "prerequisites": [
+        "No prior programming experience required!"
+      ],
+      "curriculum": [
+        {
+          "title": "Module 1: Scientific Python Fundamentals",
+          "duration": "3 Hours",
+          "lessons": [
+            "Python 3 Basics & Jupyter Lab Workflow",
+            "Vectorized Numerical Operations in NumPy",
+            "Dataframes, Ingestion & Cleaning in Pandas"
+          ]
+        },
+        {
+          "title": "Module 2: Exploratory Data Analysis & Visualization",
+          "duration": "4 Hours",
+          "lessons": [
+            "Publication-Ready Visualizations with Seaborn",
+            "Statistical Hypothesis Testing & p-values",
+            "Feature Engineering & Normalization"
+          ]
+        },
+        {
+          "title": "Module 3: Machine Learning Models & Cross-Validation",
+          "duration": "5 Hours",
+          "lessons": [
+            "Linear Regression, Logistic Regression & Decision Trees",
+            "Model Evaluation: ROC-AUC, F1-score & Confusion Matrix",
+            "Hyperparameter Tuning with GridSearch"
+          ]
+        }
+      ],
+      "buyUrl": "#enroll-free",
+      "freeAccessUrl": "#enroll-free",
+      "certificate": false,
+      "featured": false
     }
   ],
   "team": [

@@ -10,6 +10,7 @@ import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Research } from '@/components/sections/Research';
 import { Publications } from '@/components/sections/Publications';
+import { Courses } from '@/components/sections/Courses';
 import { News } from '@/components/sections/News';
 import { Team } from '@/components/sections/Team';
 import { CodeProjects } from '@/components/sections/CodeProjects';
@@ -25,7 +26,7 @@ export default function Home() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-500 selection:text-white dark:selection:bg-teal-400 dark:selection:text-slate-950">
+    <main className="min-h-screen bg-[#FFFFFF] dark:bg-[#0b1410] text-slate-900 dark:text-slate-100 font-sans selection:bg-[#214E34] selection:text-white">
       {/* Sticky Header Navigation */}
       <Navbar onOpenSearch={() => setIsSearchOpen(true)} />
 
@@ -41,6 +42,7 @@ export default function Home() {
       <About data={profileData.about} />
       <Research data={profileData.research} />
       <Publications data={profileData.publications} />
+      <Courses data={profileData.courses} />
       <News data={profileData.news} />
       <Team data={profileData.team} />
       <CodeProjects data={profileData.codeProjects} />

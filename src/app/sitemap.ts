@@ -1,7 +1,18 @@
 import { MetadataRoute } from 'next';
+import profileDataRaw from '@/data/profile.json';
+import { PortfolioData } from '@/types/portfolio';
+
+const profileData = profileDataRaw as unknown as PortfolioData;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://semachew-kassa.is-a.dev';
+
+  const courseUrls = (profileData.courses || []).map((course) => ({
+    url: `${baseUrl}/courses/${course.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
 
   return [
     {
@@ -29,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}#courses`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}#code`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -40,5 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.7,
     },
+    ...courseUrls,
   ];
 }

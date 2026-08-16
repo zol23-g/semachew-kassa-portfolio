@@ -94,7 +94,7 @@ export type PublicationCategory = 'journal' | 'conference' | 'book' | 'workshop'
 export interface Publication {
   id: string;
   title: string;
-  authors: string[]; // Semachew Molla Kanssa will be highlighted
+  authors: string[];
   venue: string;
   year: number;
   type: PublicationCategory;
@@ -106,6 +106,37 @@ export interface Publication {
   abstract: string;
   bibtex: string;
   tags: string[];
+  featured?: boolean;
+}
+
+export interface CourseModule {
+  title: string;
+  duration: string;
+  lessons: string[];
+}
+
+export interface Course {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  type: 'free' | 'paid';
+  price: string;
+  originalPrice?: string;
+  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
+  duration: string;
+  studentsEnrolled: number;
+  rating: number;
+  thumbnail: string;
+  previewVideoUrl?: string;
+  summary: string;
+  description: string;
+  learningOutcomes: string[];
+  prerequisites: string[];
+  curriculum: CourseModule[];
+  buyUrl: string;
+  freeAccessUrl?: string;
+  certificate: boolean;
   featured?: boolean;
 }
 
@@ -178,6 +209,7 @@ export interface PortfolioData {
   about: AboutInfo;
   research: ResearchSectionData;
   publications: Publication[];
+  courses: Course[];
   team: TeamMember[];
   news: NewsItem[];
   codeProjects: CodeProject[];

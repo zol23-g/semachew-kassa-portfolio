@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Search, X, BookOpen, Layers, Newspaper, Code, Video, Users, ArrowRight } from 'lucide-react';
+import { Search, X, BookOpen, Layers, Newspaper, Code, Video, Users, ArrowRight, GraduationCap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PortfolioData } from '@/types/portfolio';
+import Link from 'next/link';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -37,6 +38,10 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
     .filter(p => p.title.toLowerCase().includes(q) || p.tags.some(t => t.toLowerCase().includes(q)) || p.venue.toLowerCase().includes(q))
     .slice(0, 3);
 
+  const matchedCourses = (data.courses || [])
+    .filter(c => c.title.toLowerCase().includes(q) || c.subtitle.toLowerCase().includes(q) || c.type.toLowerCase().includes(q))
+    .slice(0, 3);
+
   const matchedProjects = data.research.projects
     .filter(p => p.title.toLowerCase().includes(q) || p.summary.toLowerCase().includes(q))
     .slice(0, 2);
@@ -49,15 +54,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
     .filter(n => n.title.toLowerCase().includes(q) || n.summary.toLowerCase().includes(q))
     .slice(0, 2);
 
-  const matchedVideos = data.videos
-    .filter(v => v.title.toLowerCase().includes(q) || v.event.toLowerCase().includes(q))
-    .slice(0, 2);
-
-  const matchedTeam = data.team
-    .filter(t => t.name.toLowerCase().includes(q) || t.role.toLowerCase().includes(q))
-    .slice(0, 2);
-
-  const totalResults = matchedPubs.length + matchedProjects.length + matchedCode.length + matchedNews.length + matchedVideos.length + matchedTeam.length;
+  const totalResults = matchedPubs.length + matchedCourses.length + matchedProjects.length + matchedCode.length + matchedNews.length;
 
   const handleSelect = (anchorId: string) => {
     onClose();
@@ -83,7 +80,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search publications, research, projects, news..."
+              placeholder="Search publications, courses, research, news..."
               className="w-full bg-transparent text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none"
               autoFocus
             />
@@ -99,7 +96,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
           <div className="max-h-96 overflow-y-auto p-4 space-y-4">
             {q === '' && (
               <div className="text-center py-8 text-slate-400 text-xs">
-                Type a keyword like <span className="font-semibold text-indigo-500">"Federated"</span>, <span className="font-semibold text-indigo-500">"GNN"</span>, <span className="font-semibold text-indigo-500">"NeurIPS"</span>, or <span className="font-semibold text-indigo-500">"Python"</span>
+                Type a keyword like <span className="font-semibold text-[#214E34] dark:text-[#3AB09E]">"Courses"</span>, <span className="font-semibold text-[#214E34] dark:text-[#3AB09E]">"Federated"</span>, <span className="font-semibold text-[#214E34] dark:text-[#3AB09E]">"GNN"</span>, or <span className="font-semibold text-[#214E34] dark:text-[#3AB09E]">"NeurIPS"</span>
               </div>
             )}
 
@@ -109,10 +106,38 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
               </div>
             )}
 
+            {matchedCourses.length > 0 && (
+              <div>
+                <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
+                  <GraduationCap className="w-3.5 h-3.5 text-[#3AB09E]" /> Courses & Masterclasses
+                </div>
+                <div className="space-y-1.5">
+                  {matchedCourses.map(c => (
+                    <Link
+                      key={c.id}
+                      href={`/courses/${c.slug}`}
+                      onClick={onClose}
+                      className="w-full text-left p-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors flex items-center justify-between group"
+                    >
+                      <div>
+                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E]">
+                          {c.title}
+                        </div>
+                        <div className="text-xs text-slate-500 dark:text-slate-400">
+                          {c.type === 'free' ? 'FREE' : c.price} • {c.level} Level
+                        </div>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E] transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {matchedPubs.length > 0 && (
               <div>
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                  <BookOpen className="w-3.5 h-3.5" /> Publications
+                  <BookOpen className="w-3.5 h-3.5 text-[#3AB09E]" /> Publications
                 </div>
                 <div className="space-y-1.5">
                   {matchedPubs.map(p => (
@@ -122,14 +147,14 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
                       className="w-full text-left p-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors flex items-center justify-between group"
                     >
                       <div>
-                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-teal-400">
+                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E]">
                           {p.title}
                         </div>
                         <div className="text-xs text-slate-500 dark:text-slate-400">
                           {p.venue} ({p.year})
                         </div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-teal-400 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E] transition-transform group-hover:translate-x-1" />
                     </button>
                   ))}
                 </div>
@@ -149,14 +174,14 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
                       className="w-full text-left p-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors flex items-center justify-between group"
                     >
                       <div>
-                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-teal-400">
+                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E]">
                           {pr.title}
                         </div>
                         <div className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
                           {pr.summary}
                         </div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-teal-400 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E] transition-transform group-hover:translate-x-1" />
                     </button>
                   ))}
                 </div>
@@ -176,41 +201,14 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
                       className="w-full text-left p-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors flex items-center justify-between group"
                     >
                       <div>
-                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-teal-400">
+                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E]">
                           {c.title}
                         </div>
                         <div className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
                           {c.description}
                         </div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-teal-400 transition-transform group-hover:translate-x-1" />
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {matchedNews.length > 0 && (
-              <div>
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                  <Newspaper className="w-3.5 h-3.5" /> News & Announcements
-                </div>
-                <div className="space-y-1.5">
-                  {matchedNews.map(n => (
-                    <button
-                      key={n.id}
-                      onClick={() => handleSelect('news')}
-                      className="w-full text-left p-2.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors flex items-center justify-between group"
-                    >
-                      <div>
-                        <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-indigo-600 dark:group-hover:text-teal-400">
-                          {n.title}
-                        </div>
-                        <div className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
-                          {n.date} - {n.summary}
-                        </div>
-                      </div>
-                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-teal-400 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#214E34] dark:group-hover:text-[#3AB09E] transition-transform group-hover:translate-x-1" />
                     </button>
                   ))}
                 </div>
@@ -221,7 +219,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({ isOpen, onClose,
           {/* Footer */}
           <div className="px-4 py-2.5 bg-slate-50 dark:bg-slate-900/80 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
             <span>Press <kbd className="px-1.5 py-0.5 bg-white dark:bg-slate-800 rounded border border-slate-300 dark:border-slate-700 font-mono">ESC</kbd> to exit</span>
-            <span>SMK Academic Portfolio Search</span>
+            <span>SMK Portfolio Search</span>
           </div>
         </motion.div>
       </div>
