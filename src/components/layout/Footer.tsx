@@ -105,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
           </div>
           <div className="flex items-center gap-6">
             <span className="font-medium text-slate-400">
-              Developed by <strong className="text-white font-bold tracking-wide hover:text-[#3AB09E] transition-colors cursor-pointer">Rocket Systems</strong>
+              Powered by <strong className="text-white font-bold tracking-wide hover:text-[#3AB09E] transition-colors cursor-pointer">Rocket Systems</strong>
             </span>
             <a href="#home" className="hover:text-[#3AB09E] transition-colors font-semibold">
               Back to Top
