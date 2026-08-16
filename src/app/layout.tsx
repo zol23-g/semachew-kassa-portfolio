@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: 'Semachew Molla Kassa Academic Website',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop',
+        url: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1200&auto=format&fit=crop',
         width: 1200,
         height: 630,
         alt: 'Semachew Molla Kassa Academic Portfolio',
