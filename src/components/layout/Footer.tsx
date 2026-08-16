@@ -12,9 +12,9 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ hero }) => {
   return (
-    <footer className="bg-slate-900 text-slate-400 border-t border-slate-800 pt-16 pb-12">
+    <footer className="bg-slate-950 text-slate-400 border-t border-slate-800/80 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
           {/* Col 1: Bio */}
           <div className="md:col-span-2 space-y-4">
             <Logo />
@@ -33,19 +33,19 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#about" className="hover:text-teal-400 transition-colors">About & Bio</a>
+                <a href="#about" className="hover:text-[#3AB09E] transition-colors">About & Bio</a>
               </li>
               <li>
-                <a href="#research" className="hover:text-teal-400 transition-colors">Research Areas</a>
+                <a href="#research" className="hover:text-[#3AB09E] transition-colors">Research Areas</a>
               </li>
               <li>
-                <a href="#publications" className="hover:text-teal-400 transition-colors">Publications & Papers</a>
+                <a href="#publications" className="hover:text-[#3AB09E] transition-colors">Publications & Papers</a>
               </li>
               <li>
-                <a href="#code" className="hover:text-teal-400 transition-colors">Open Source Repos</a>
+                <a href="#code" className="hover:text-[#3AB09E] transition-colors">Open Source Repos</a>
               </li>
               <li>
-                <a href="#team" className="hover:text-teal-400 transition-colors">Lab Members</a>
+                <a href="#team" className="hover:text-[#3AB09E] transition-colors">Lab Members</a>
               </li>
             </ul>
           </div>
@@ -61,9 +61,9 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
                   href={hero.socials.googleScholar}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+                  className="flex items-center gap-2 hover:text-[#3AB09E] transition-colors"
                 >
-                  <BookOpen className="w-4 h-4 text-teal-400" /> Google Scholar
+                  <BookOpen className="w-4 h-4 text-[#3AB09E]" /> Google Scholar
                 </a>
               )}
               {hero.socials.github && (
@@ -71,9 +71,9 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
                   href={hero.socials.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+                  className="flex items-center gap-2 hover:text-[#3AB09E] transition-colors"
                 >
-                  <GithubIcon className="w-4 h-4 text-teal-400" /> GitHub Profile
+                  <GithubIcon className="w-4 h-4 text-[#3AB09E]" /> GitHub Profile
                 </a>
               )}
               {hero.socials.linkedin && (
@@ -81,17 +81,17 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
                   href={hero.socials.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+                  className="flex items-center gap-2 hover:text-[#3AB09E] transition-colors"
                 >
-                  <LinkedinIcon className="w-4 h-4 text-teal-400" /> LinkedIn Network
+                  <LinkedinIcon className="w-4 h-4 text-[#3AB09E]" /> LinkedIn Network
                 </a>
               )}
               {hero.socials.email && (
                 <a
                   href={`mailto:${hero.socials.email}`}
-                  className="flex items-center gap-2 hover:text-teal-400 transition-colors"
+                  className="flex items-center gap-2 hover:text-[#3AB09E] transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-teal-400" /> {hero.socials.email}
+                  <Mail className="w-4 h-4 text-[#3AB09E]" /> {hero.socials.email}
                 </a>
               )}
             </div>
@@ -104,8 +104,10 @@ export const Footer: React.FC<FooterProps> = ({ hero }) => {
             © {new Date().getFullYear()} Semachew Molla Kassa. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <span>Built with Next.js & Tailwind CSS</span>
-            <a href="#home" className="hover:text-teal-400 transition-colors">
+            <span className="font-medium text-slate-400">
+              Developed by <strong className="text-white font-bold tracking-wide hover:text-[#3AB09E] transition-colors cursor-pointer">Rocket Systems</strong>
+            </span>
+            <a href="#home" className="hover:text-[#3AB09E] transition-colors font-semibold">
               Back to Top
             </a>
           </div>
