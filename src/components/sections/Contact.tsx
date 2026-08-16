@@ -35,7 +35,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+    <section id="contact" className="py-20 md:py-28 bg-[#FDFDFD] dark:bg-[#090d16] border-t border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Get in Touch"
@@ -59,19 +59,19 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
 
               <div className="space-y-4 text-sm">
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-teal-400 shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="block text-xs font-bold text-slate-400 uppercase">Direct Email</span>
-                    <a href={`mailto:${data.email}`} className="font-semibold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-teal-400 transition-colors">
+                    <a href={`mailto:${data.email}`} className="font-semibold text-slate-900 dark:text-white hover:text-[#FF5733] dark:hover:text-[#00D4FF] transition-colors">
                       {data.email}
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-teal-400 shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] shrink-0">
                     <Building2 className="w-5 h-5" />
                   </div>
                   <div>
@@ -83,7 +83,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-teal-400 shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-teal-400 shrink-0">
+                  <div className="p-2.5 rounded-xl bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -128,7 +128,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
           >
             <div className="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl space-y-6">
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-2xl bg-indigo-50 dark:bg-slate-800 text-indigo-600 dark:text-teal-400">
+                <div className="p-3 rounded-2xl bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF]">
                   <MessageSquare className="w-6 h-6" />
                 </div>
                 <div>
@@ -142,11 +142,11 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
               </div>
 
               {isSubmitted && (
-                <div className="p-4 rounded-2xl bg-teal-50 dark:bg-teal-950/80 border border-teal-200 dark:border-teal-800 text-teal-800 dark:text-teal-200 text-xs flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0" />
+                <div className="p-4 rounded-2xl bg-[#00D4FF]/10 border border-[#00D4FF]/30 text-slate-800 dark:text-slate-200 text-xs flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#00D4FF] shrink-0" />
                   <div>
                     <span className="font-bold block">Message Sent Successfully!</span>
-                    Thank you for reaching out. Dr. Kanssa or lab coordinator will respond promptly.
+                    Thank you for reaching out. Dr. Kassa or lab coordinator will respond promptly.
                   </div>
                 </div>
               )}
@@ -163,7 +163,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. Prof. Alan Turing"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-teal-400"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF5733] dark:focus:ring-[#00D4FF]"
                     />
                   </div>
 
@@ -177,7 +177,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="alan.turing@university.edu"
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-teal-400"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF5733] dark:focus:ring-[#00D4FF]"
                     />
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                   <select
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-teal-400"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[#FF5733] dark:focus:ring-[#00D4FF]"
                   >
                     <option value="Academic Collaboration Inquiry">Research Collaboration</option>
                     <option value="Prospective PhD/Graduate Student">Prospective PhD / Postdoc Application</option>
@@ -209,14 +209,14 @@ export const Contact: React.FC<ContactProps> = ({ data, socials }) => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Please state the purpose of your message..."
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-teal-400"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF5733] dark:focus:ring-[#00D4FF]"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 dark:bg-teal-500 dark:hover:bg-teal-400 text-white font-bold text-sm shadow-lg shadow-indigo-500/25 dark:shadow-teal-500/20 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-4 rounded-xl bg-[#FF5733] hover:bg-[#e04724] text-white font-bold text-sm shadow-lg shadow-[#FF5733]/25 transition-all flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     'Sending Message...'

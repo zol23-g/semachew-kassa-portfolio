@@ -2,31 +2,53 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-sans: var(--font-open-sans), 'Open Sans', system-ui, -apple-system, sans-serif;
+  --color-sunset: #FF5733;
+  --color-sunset-hover: #e04724;
+  --color-aqua: #00D4FF;
+  --color-aqua-hover: #00b5dc;
+  --color-softwhite: #FDFDFD;
+}
+
 @layer base {
   :root {
-    --background: 255 255 255;
-    --foreground: 15 23 42;
+    --background: #FDFDFD;
+    --foreground: #0f172a;
   }
 
   .dark {
-    --background: 2 6 23;
-    --foreground: 248 250 252;
+    --background: #090d16;
+    --foreground: #f8fafc;
   }
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-open-sans), 'Open Sans', system-ui, sans-serif;
 }
 
 body {
-  background-color: #f8fafc;
+  background-color: #FDFDFD;
   color: #0f172a;
+  font-family: var(--font-open-sans), 'Open Sans', system-ui, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark body {
-  background-color: #020617;
+  background-color: #090d16;
   color: #f8fafc;
+}
+
+/* Selection style */
+::selection {
+  background-color: #FF5733;
+  color: #ffffff;
+}
+
+.dark ::selection {
+  background-color: #00D4FF;
+  color: #090d16;
 }
 
 /* Custom subtle scrollbar */
@@ -37,9 +59,9 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(156, 163, 175, 0.4);
+  background: rgba(255, 87, 51, 0.3);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(156, 163, 175, 0.7);
+  background: rgba(255, 87, 51, 0.6);
 }
