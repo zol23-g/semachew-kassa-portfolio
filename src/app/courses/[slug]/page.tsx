@@ -12,14 +12,13 @@ export function generateStaticParams() {
   }));
 }
 
-interface CoursePageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function CourseDetailPage({ params }: CoursePageProps) {
-  const course = profileData.courses.find((c) => c.slug === params.slug);
+export default async function CourseDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const resolvedParams = await params;
+  const course = profileData.courses.find((c) => c.slug === resolvedParams.slug);
 
   if (!course) {
     notFound();
