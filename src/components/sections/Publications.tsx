@@ -44,7 +44,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
   };
 
   return (
-    <section id="publications" className="py-20 md:py-28 bg-[#FDFDFD] dark:bg-[#090d16] border-t border-slate-200 dark:border-slate-800">
+    <section id="publications" className="py-20 md:py-28 bg-[#FFFFFF] dark:bg-[#0b1410] border-t border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Peer-Reviewed Literature"
@@ -62,8 +62,8 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                   activeCategory === cat.id
-                    ? 'bg-[#FF5733] text-white shadow-md shadow-[#FF5733]/20'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    ? 'bg-[#214E34] text-white shadow-md shadow-[#214E34]/20'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-[#DBE9EE] dark:hover:bg-slate-700'
                 }`}
               >
                 {cat.label}
@@ -79,7 +79,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search by title, author, year, tag..."
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF5733] dark:focus:ring-[#00D4FF]"
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#214E34] dark:focus:ring-[#3AB09E]"
             />
             {searchQuery && (
               <button
@@ -106,13 +106,13 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
-                className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 shadow-xs hover:shadow-md transition-all duration-300 space-y-4"
+                className="p-6 rounded-3xl bg-[#FFFFFF] dark:bg-slate-900 border border-slate-200 dark:border-slate-800/80 shadow-xs hover:shadow-md transition-all duration-300 space-y-4"
               >
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">
                     {/* Badge & Year */}
                     <div className="flex items-center gap-2">
-                      <span className="px-2.5 py-0.5 text-[10px] font-extrabold tracking-wider uppercase rounded-md bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] border border-[#FF5733]/20 dark:border-[#00D4FF]/20">
+                      <span className="px-2.5 py-0.5 text-[10px] font-extrabold tracking-wider uppercase rounded-md bg-[#DBE9EE] dark:bg-[#3AB09E]/15 text-[#214E34] dark:text-[#3AB09E] border border-[#214E34]/20 dark:border-[#3AB09E]/30">
                         {pub.type}
                       </span>
                       <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
@@ -137,7 +137,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                         return (
                           <span key={i}>
                             {isPrimary ? (
-                              <strong className="text-[#FF5733] dark:text-[#00D4FF] font-extrabold underline decoration-2 underline-offset-2">
+                              <strong className="text-[#214E34] dark:text-[#3AB09E] font-extrabold underline decoration-2 underline-offset-2">
                                 {author}
                               </strong>
                             ) : (
@@ -157,7 +157,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
 
                   {/* Citation Pill */}
                   <div className="flex md:flex-col items-center md:items-end justify-between shrink-0">
-                    <div className="px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
+                    <div className="px-3 py-1.5 rounded-xl bg-[#DBE9EE]/40 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-center shadow-xs">
                       <span className="text-xs font-bold text-slate-900 dark:text-white">
                         {pub.citations}
                       </span>
@@ -169,7 +169,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                 </div>
 
                 {/* Abstract snippet */}
-                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed bg-slate-50 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-100 dark:border-slate-800/60">
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed bg-[#DBE9EE]/30 dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200/60 dark:border-slate-800/60">
                   <span className="font-bold text-slate-700 dark:text-slate-300">Abstract: </span>
                   {pub.abstract}
                 </p>
@@ -180,7 +180,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                     {pub.tags.map((tag, tIdx) => (
                       <span
                         key={tIdx}
-                        className="px-2 py-0.5 text-[10px] font-medium rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
+                        className="px-2 py-0.5 text-[10px] font-medium rounded-md bg-[#DBE9EE]/60 dark:bg-slate-800 text-[#214E34] dark:text-slate-300 font-semibold"
                       >
                         #{tag}
                       </span>
@@ -193,9 +193,9 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                         href={`https://doi.org/${pub.doi}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-200"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-[#DBE9EE] dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-200"
                       >
-                        <ExternalLink className="w-3.5 h-3.5 text-[#FF5733]" /> DOI
+                        <ExternalLink className="w-3.5 h-3.5 text-[#214E34] dark:text-[#3AB09E]" /> DOI
                       </a>
                     )}
                     {pub.codeUrl && (
@@ -203,14 +203,14 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                         href={pub.codeUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-200"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-[#DBE9EE] dark:hover:bg-slate-700 transition-colors text-slate-700 dark:text-slate-200"
                       >
-                        <Code className="w-3.5 h-3.5 text-[#00D4FF]" /> Code
+                        <Code className="w-3.5 h-3.5 text-[#3AB09E]" /> Code
                       </a>
                     )}
                     <button
                       onClick={() => setBibtexModalPub(pub)}
-                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] hover:bg-[#FF5733]/20 dark:hover:bg-[#00D4FF]/20 transition-colors border border-[#FF5733]/20 dark:border-[#00D4FF]/20"
+                      className="inline-flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg bg-[#DBE9EE] dark:bg-[#3AB09E]/20 text-[#214E34] dark:text-[#3AB09E] hover:bg-[#214E34] hover:text-white dark:hover:bg-[#3AB09E] dark:hover:text-slate-950 transition-colors border border-[#214E34]/20 dark:border-[#3AB09E]/30"
                     >
                       <Quote className="w-3.5 h-3.5" /> BibTeX
                     </button>
@@ -233,7 +233,7 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
-                    <Quote className="w-4 h-4 text-[#FF5733] dark:text-[#00D4FF]" /> BibTeX Citation
+                    <Quote className="w-4 h-4 text-[#214E34] dark:text-[#3AB09E]" /> BibTeX Citation
                   </div>
                   <button
                     onClick={() => setBibtexModalPub(null)}
@@ -249,11 +249,11 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
                   </pre>
                   <button
                     onClick={() => handleCopyBibtex(bibtexModalPub.bibtex)}
-                    className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#FF5733] hover:bg-[#e04724] text-white text-[11px] font-bold transition-colors shadow-xs"
+                    className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#214E34] hover:bg-[#193c28] text-white text-[11px] font-bold transition-colors shadow-xs"
                   >
                     {copied ? (
                       <>
-                        <Check className="w-3.5 h-3.5 text-[#00D4FF]" /> Copied!
+                        <Check className="w-3.5 h-3.5 text-[#3AB09E]" /> Copied!
                       </>
                     ) : (
                       <>

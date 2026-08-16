@@ -27,7 +27,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       className={`mb-12 md:mb-16 ${align === 'center' ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'} ${className}`}
     >
       {badge && (
-        <span className="inline-flex items-center gap-1.5 px-3.5 py-1 text-xs font-bold tracking-wider text-[#FF5733] dark:text-[#00D4FF] uppercase bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 border border-[#FF5733]/20 dark:border-[#00D4FF]/20 rounded-full mb-3 shadow-xs">
+        <span className="inline-flex items-center gap-1.5 px-3.5 py-1 text-xs font-bold tracking-wider text-[#214E34] dark:text-[#3AB09E] uppercase bg-[#DBE9EE] dark:bg-[#3AB09E]/15 border border-[#214E34]/20 dark:border-[#3AB09E]/30 rounded-full mb-3 shadow-xs">
           {badge}
         </span>
       )}

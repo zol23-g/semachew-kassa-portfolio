@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#FDFDFD]/90 dark:bg-[#090d16]/90 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs py-3'
+          ? 'bg-[#FFFFFF]/90 dark:bg-[#0b1410]/90 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 shadow-xs py-3'
           : 'bg-transparent py-5'
       }`}
     >
@@ -88,8 +88,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
                   onClick={(e) => handleNavClick(e, link.href)}
                   className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                     isActive
-                      ? 'text-[#FF5733] dark:text-[#00D4FF] bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 font-bold'
-                      : 'text-slate-600 dark:text-slate-300 hover:text-[#FF5733] dark:hover:text-[#00D4FF] hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                      ? 'text-[#214E34] dark:text-[#3AB09E] bg-[#DBE9EE] dark:bg-[#3AB09E]/20 font-extrabold'
+                      : 'text-slate-600 dark:text-slate-300 hover:text-[#214E34] dark:hover:text-[#3AB09E] hover:bg-slate-100 dark:hover:bg-slate-800/60'
                   }`}
                 >
                   {link.name}
@@ -106,7 +106,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
               aria-label="Global Search"
               className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
             >
-              <Search className="w-4 h-4 text-[#FF5733] dark:text-[#00D4FF]" />
+              <Search className="w-4 h-4 text-[#214E34] dark:text-[#3AB09E]" />
               <span className="hidden sm:inline">Search</span>
               <kbd className="hidden md:inline-block px-1.5 py-0.5 text-[10px] bg-white dark:bg-slate-900 rounded border border-slate-300 dark:border-slate-700 font-mono">
                 ⌘K
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#FDFDFD] dark:bg-[#090d16] border-b border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl"
+            className="lg:hidden bg-[#FFFFFF] dark:bg-[#0b1410] border-b border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl"
           >
             <div className="px-4 py-5 space-y-2">
               {navLinks.map((link) => {
@@ -147,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
                     onClick={(e) => handleNavClick(e, link.href)}
                     className={`block px-4 py-2.5 rounded-xl text-base font-medium transition-colors ${
                       isActive
-                        ? 'bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 text-[#FF5733] dark:text-[#00D4FF] font-bold'
+                        ? 'bg-[#DBE9EE] dark:bg-[#3AB09E]/20 text-[#214E34] dark:text-[#3AB09E] font-bold'
                         : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900'
                     }`}
                   >

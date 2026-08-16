@@ -4,21 +4,22 @@
 
 @theme {
   --font-sans: var(--font-open-sans), 'Open Sans', system-ui, -apple-system, sans-serif;
-  --color-sunset: #FF5733;
-  --color-sunset-hover: #e04724;
-  --color-aqua: #00D4FF;
-  --color-aqua-hover: #00b5dc;
-  --color-softwhite: #FDFDFD;
+  --color-myrtle: #214E34;
+  --color-myrtle-hover: #193c28;
+  --color-keppel: #3AB09E;
+  --color-keppel-hover: #319787;
+  --color-azureish: #DBE9EE;
+  --color-plainwhite: #FFFFFF;
 }
 
 @layer base {
   :root {
-    --background: #FDFDFD;
+    --background: #FFFFFF;
     --foreground: #0f172a;
   }
 
   .dark {
-    --background: #090d16;
+    --background: #0b1410;
     --foreground: #f8fafc;
   }
 }
@@ -29,26 +30,26 @@ html {
 }
 
 body {
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
   color: #0f172a;
   font-family: var(--font-open-sans), 'Open Sans', system-ui, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark body {
-  background-color: #090d16;
+  background-color: #0b1410;
   color: #f8fafc;
 }
 
 /* Selection style */
 ::selection {
-  background-color: #FF5733;
+  background-color: #214E34;
   color: #ffffff;
 }
 
 .dark ::selection {
-  background-color: #00D4FF;
-  color: #090d16;
+  background-color: #3AB09E;
+  color: #0b1410;
 }
 
 /* Custom subtle scrollbar */
@@ -59,9 +60,9 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 87, 51, 0.3);
+  background: rgba(33, 78, 52, 0.4);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 87, 51, 0.6);
+  background: rgba(33, 78, 52, 0.7);
 }

@@ -12,14 +12,14 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ data }) => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-b from-[#FDFDFD] via-white to-slate-50 dark:from-[#090d16] dark:via-[#0c121f] dark:to-[#090d16]">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-b from-[#FFFFFF] via-[#F4F9F8] to-[#FFFFFF] dark:from-[#0b1410] dark:via-[#0f1d17] dark:to-[#0b1410]">
       {/* Dynamic Animated Background Mesh */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#FF5733]/10 dark:bg-[#FF5733]/15 blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-96 h-96 rounded-full bg-[#00D4FF]/10 dark:bg-[#00D4FF]/15 blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-[#214E34]/10 dark:bg-[#3AB09E]/15 blur-3xl" />
+        <div className="absolute top-1/2 -left-40 w-96 h-96 rounded-full bg-[#3AB09E]/15 dark:bg-[#3AB09E]/20 blur-3xl" />
         
         {/* Particle Grid Canvas Effect */}
-        <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07] bg-[radial-gradient(#FF5733_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.07] bg-[radial-gradient(#214E34_1px,transparent_1px)] [background-size:24px_24px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -32,9 +32,9 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
             className="lg:col-span-8 space-y-6"
           >
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FF5733]/10 dark:bg-[#00D4FF]/10 border border-[#FF5733]/20 dark:border-[#00D4FF]/20 shadow-xs">
-              <span className="w-2 h-2 rounded-full bg-[#00D4FF] animate-pulse" />
-              <span className="text-xs font-bold text-[#FF5733] dark:text-[#00D4FF] tracking-wide uppercase">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DBE9EE] dark:bg-[#3AB09E]/15 border border-[#214E34]/20 dark:border-[#3AB09E]/30 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#3AB09E] animate-pulse" />
+              <span className="text-xs font-extrabold text-[#214E34] dark:text-[#3AB09E] tracking-wide uppercase">
                 {data.title}
               </span>
             </div>
@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
                 {data.name}
               </h1>
-              <p className="mt-3 text-lg sm:text-xl font-bold text-[#FF5733] dark:text-[#00D4FF]">
+              <p className="mt-3 text-lg sm:text-xl font-bold text-[#214E34] dark:text-[#3AB09E]">
                 {data.institution} • {data.department}
               </p>
             </div>
@@ -63,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
                 href="#publications"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#FF5733] hover:bg-[#e04724] text-white font-bold text-sm shadow-lg shadow-[#FF5733]/25 transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#214E34] hover:bg-[#193c28] text-white font-bold text-sm shadow-lg shadow-[#214E34]/25 transition-all duration-200 hover:scale-105"
               >
                 <BookOpen className="w-4 h-4" /> View Publications
               </a>
@@ -71,13 +71,13 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                 href="#research"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold text-sm shadow-md transition-all duration-200 hover:scale-105"
               >
-                <FileText className="w-4 h-4 text-[#00D4FF]" /> Explore Research
+                <FileText className="w-4 h-4 text-[#3AB09E]" /> Explore Research
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm transition-all duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-[#DBE9EE]/50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm transition-all duration-200"
               >
-                <Mail className="w-4 h-4 text-[#FF5733]" /> Contact Me
+                <Mail className="w-4 h-4 text-[#214E34] dark:text-[#3AB09E]" /> Contact Me
               </a>
             </div>
 
@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                   href={data.socials.googleScholar}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-[#FF5733] dark:hover:text-[#00D4FF] transition-colors"
+                  className="p-2 rounded-lg hover:bg-[#DBE9EE] dark:hover:bg-slate-800 hover:text-[#214E34] dark:hover:text-[#3AB09E] transition-colors"
                   title="Google Scholar"
                 >
                   <BookOpen className="w-5 h-5" />
@@ -100,7 +100,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                   href={data.socials.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-[#FF5733] dark:hover:text-[#00D4FF] transition-colors"
+                  className="p-2 rounded-lg hover:bg-[#DBE9EE] dark:hover:bg-slate-800 hover:text-[#214E34] dark:hover:text-[#3AB09E] transition-colors"
                   title="GitHub"
                 >
                   <GithubIcon className="w-5 h-5" />
@@ -111,7 +111,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                   href={data.socials.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 hover:text-[#FF5733] dark:hover:text-[#00D4FF] transition-colors"
+                  className="p-2 rounded-lg hover:bg-[#DBE9EE] dark:hover:bg-slate-800 hover:text-[#214E34] dark:hover:text-[#3AB09E] transition-colors"
                   title="LinkedIn"
                 >
                   <LinkedinIcon className="w-5 h-5" />
@@ -122,7 +122,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                   href={data.socials.orcid}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2.5 py-1 text-xs font-bold rounded-lg border border-[#00D4FF]/40 text-[#00D4FF] hover:bg-[#00D4FF]/10 transition-colors"
+                  className="px-2.5 py-1 text-xs font-bold rounded-lg border border-[#3AB09E]/40 text-[#214E34] dark:text-[#3AB09E] hover:bg-[#3AB09E]/10 transition-colors"
                   title="ORCID iD"
                 >
                   ORCID
@@ -140,7 +140,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
           >
             <div className="relative p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl space-y-6">
               {/* Photo */}
-              <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-[#FF5733]/20 dark:border-slate-800 shadow-inner">
+              <div className="relative w-full aspect-square rounded-2xl overflow-hidden border-2 border-[#214E34]/20 dark:border-slate-800 shadow-inner">
                 <img
                   src={data.avatarUrl}
                   alt={data.name}
@@ -148,7 +148,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
                   <div className="text-white">
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#00D4FF]">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#3AB09E]">
                       Primary Investigator
                     </p>
                     <p className="text-sm font-bold">Trustworthy AI Lab</p>
@@ -161,12 +161,12 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                 {data.highlights.map((item, idx) => (
                   <div
                     key={idx}
-                    className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center"
+                    className="p-3.5 rounded-xl bg-[#DBE9EE]/40 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800 text-center"
                   >
-                    <div className="text-2xl font-black text-[#FF5733] dark:text-[#00D4FF] tracking-tight">
+                    <div className="text-2xl font-black text-[#214E34] dark:text-[#3AB09E] tracking-tight">
                       {item.value}
                     </div>
-                    <div className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                    <div className="text-xs font-semibold text-slate-600 dark:text-slate-400">
                       {item.label}
                     </div>
                   </div>
