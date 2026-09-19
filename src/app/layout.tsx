@@ -10,18 +10,23 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Semachew Molla Kassa | Academic & Artificial Intelligence Researcher',
-  description: 'Official academic website of Semachew Molla Kassa. Assistant Professor and Lead AI Researcher specializing in Trustworthy AI, Graph Neural Networks, Explainable Deep Learning, and Privacy-Preserving Federated Learning.',
+  title: 'Semachew Molla Kassa | PhD Researcher in Geotechnical Engineering & AI',
+  description: 'Official academic and research website of Semachew Molla Kassa. PhD Researcher in Geotechnical Engineering at Warsaw University of Technology, Poland. Focus on slope stability, landslide risk assessment, stratigraphic uncertainty, numerical modeling (PLAXIS), and artificial intelligence.',
   keywords: [
     'Semachew Molla Kassa',
-    'AI Researcher',
-    'Machine Learning Professor',
-    'Graph Neural Networks',
-    'Explainable AI',
-    'Federated Learning',
-    'Trustworthy AI',
-    'Computer Science',
-    'Academic Portfolio',
+    'Geotechnical Engineering',
+    'Warsaw University of Technology',
+    'Slope Stability',
+    'Landslide Risk Assessment',
+    'Rainfall-Induced Landslides',
+    'Artificial Intelligence and Machine Learning',
+    'Stratigraphic Uncertainty',
+    'Reliability-Based Geotechnical Design',
+    'Monte Carlo Simulation',
+    'Bayesian Methods',
+    'Finite Element Modeling',
+    'PLAXIS 2D 3D',
+    'DAAD Research Fellow',
   ],
   authors: [{ name: 'Semachew Molla Kassa' }],
   creator: 'Semachew Molla Kassa',
@@ -29,8 +34,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://semachew-kassa.is-a.dev',
-    title: 'Semachew Molla Kassa | Academic & AI Research Portfolio',
-    description: 'Pioneering Trustworthy Artificial Intelligence, Graph Neural Networks, and Distributed Machine Learning.',
+    title: 'Semachew Molla Kassa | Geotechnical Engineering & AI Research',
+    description: 'PhD Researcher in Geotechnical Engineering at Warsaw University of Technology, Poland. Integrating geotechnical engineering, AI, and numerical modeling.',
     siteName: 'Semachew Molla Kassa Academic Website',
     images: [
       {
@@ -43,8 +48,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Semachew Molla Kassa | Academic & AI Research Portfolio',
-    description: 'Pioneering Trustworthy Artificial Intelligence, Graph Neural Networks, and Distributed Machine Learning.',
+    title: 'Semachew Molla Kassa | Geotechnical Engineering & AI Research',
+    description: 'PhD Researcher in Geotechnical Engineering at Warsaw University of Technology, Poland.',
     creator: '@semachew_kassa',
   },
   robots: {
@@ -70,10 +75,10 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Semachew Molla Kassa',
-    jobTitle: 'Assistant Professor & Lead AI Researcher',
+    jobTitle: 'PhD Researcher in Geotechnical Engineering',
     worksFor: {
       '@type': 'EducationalOrganization',
-      name: 'Department of Computer Science & Artificial Intelligence',
+      name: 'Warsaw University of Technology, Poland',
     },
     url: 'https://semachew-kassa.is-a.dev',
     sameAs: [
@@ -81,13 +86,15 @@ export default function RootLayout({
       'https://orcid.org',
       'https://github.com',
       'https://linkedin.com',
+      'https://researchgate.net',
     ],
     knowsAbout: [
+      'Geotechnical Engineering',
+      'Slope Stability',
+      'Landslide Risk Assessment',
       'Artificial Intelligence',
-      'Machine Learning',
-      'Graph Neural Networks',
-      'Explainable AI',
-      'Federated Learning',
+      'Stratigraphic Uncertainty',
+      'Numerical Modeling',
     ],
   };
 

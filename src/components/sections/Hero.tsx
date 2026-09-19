@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HeroInfo } from '@/types/portfolio';
-import { BookOpen, FileText, Mail, ArrowRight, ExternalLink, Award } from 'lucide-react';
+import { BookOpen, FileText, Mail, ArrowRight, ExternalLink, User } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/SocialIcons';
 
 interface HeroProps {
@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#DBE9EE] dark:bg-[#3AB09E]/15 border border-[#214E34]/20 dark:border-[#3AB09E]/30 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-[#3AB09E] animate-pulse" />
               <span className="text-xs font-extrabold text-[#214E34] dark:text-[#3AB09E] tracking-wide uppercase">
-                {data.title}
+                PhD Researcher • Geotechnical Engineering & AI
               </span>
             </div>
 
@@ -44,38 +44,42 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
                 {data.name}
               </h1>
-              <p className="mt-3 text-lg sm:text-xl font-bold text-[#214E34] dark:text-[#3AB09E]">
-                {data.institution} • {data.department}
+              <p className="mt-3 text-base sm:text-lg lg:text-xl font-bold text-[#214E34] dark:text-[#3AB09E] leading-snug">
+                {data.title}
+              </p>
+              <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                {data.subtitle}
               </p>
             </div>
 
-            {/* Tagline */}
-            <p className="text-lg sm:text-xl text-slate-700 dark:text-slate-300 font-normal leading-relaxed max-w-3xl">
-              {data.tagline}
-            </p>
-
-            {/* Brief Bio */}
-            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
+            {/* Short Introduction */}
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300 font-normal leading-relaxed max-w-3xl">
               {data.bioBrief}
             </p>
 
-            {/* Call To Action Buttons */}
-            <div className="pt-2 flex flex-wrap items-center gap-4">
+            {/* Main Buttons Specified in PDF */}
+            <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
               <a
-                href="#publications"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#214E34] hover:bg-[#193c28] text-white font-bold text-sm shadow-lg shadow-[#214E34]/25 transition-all duration-200 hover:scale-105"
+                href="#about"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#214E34] hover:bg-[#193c28] text-white font-bold text-sm shadow-lg shadow-[#214E34]/25 transition-all duration-200 hover:scale-105"
               >
-                <BookOpen className="w-4 h-4" /> View Publications
+                <User className="w-4 h-4" /> About Me
               </a>
               <a
                 href="#research"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold text-sm shadow-md transition-all duration-200 hover:scale-105"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-bold text-sm shadow-md transition-all duration-200 hover:scale-105"
               >
-                <FileText className="w-4 h-4 text-[#3AB09E]" /> Explore Research
+                <FileText className="w-4 h-4 text-[#3AB09E]" /> Research
+              </a>
+              <a
+                href="#publications"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-[#DBE9EE] hover:bg-[#c9e0e8] dark:bg-slate-800 dark:hover:bg-slate-700 text-[#214E34] dark:text-[#3AB09E] font-bold text-sm transition-all duration-200 border border-[#214E34]/20"
+              >
+                <BookOpen className="w-4 h-4" /> Publications
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-[#DBE9EE]/50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm transition-all duration-200"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-[#DBE9EE]/50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold text-sm transition-all duration-200"
               >
                 <Mail className="w-4 h-4 text-[#214E34] dark:text-[#3AB09E]" /> Contact Me
               </a>
@@ -146,12 +150,12 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                   alt={data.name}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent flex items-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
                   <div className="text-white">
                     <p className="text-xs font-bold uppercase tracking-wider text-[#3AB09E]">
-                      Primary Investigator
+                      PhD Researcher
                     </p>
-                    <p className="text-sm font-bold">Trustworthy AI Lab</p>
+                    <p className="text-sm font-bold">Warsaw Univ. of Technology</p>
                   </div>
                 </div>
               </div>
@@ -163,10 +167,10 @@ export const Hero: React.FC<HeroProps> = ({ data }) => {
                     key={idx}
                     className="p-3.5 rounded-xl bg-[#DBE9EE]/40 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800 text-center"
                   >
-                    <div className="text-2xl font-black text-[#214E34] dark:text-[#3AB09E] tracking-tight">
+                    <div className="text-xl font-black text-[#214E34] dark:text-[#3AB09E] tracking-tight">
                       {item.value}
                     </div>
-                    <div className="text-xs font-semibold text-slate-600 dark:text-slate-400">
+                    <div className="text-[11px] font-semibold text-slate-600 dark:text-slate-400">
                       {item.label}
                     </div>
                   </div>
