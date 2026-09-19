@@ -10,11 +10,11 @@
     "avatarUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
     "cvUrl": "#contact",
     "socials": {
-      "googleScholar": "https://scholar.google.com",
+      "googleScholar": "https://scholar.google.com/citations?user=semachew_kassa",
       "orcid": "https://orcid.org",
       "github": "https://github.com",
       "linkedin": "https://linkedin.com",
-      "researchGate": "https://researchgate.net",
+      "researchGate": "https://www.researchgate.net/profile/Semachew-Kassa",
       "twitter": "https://x.com",
       "email": "semachew.kassa@pw.edu.pl"
     },
@@ -39,10 +39,16 @@
         "thesis": "Uncertainty Quantification and Data-Driven Landslide Risk Assessment in Heterogeneous Soils"
       },
       {
-        "degree": "M.Sc. in Geotechnical / Civil Engineering",
+        "degree": "M.Sc. in Geotechnical Engineering",
         "field": "Numerical Modeling & Soil Mechanics",
-        "institution": "Warsaw University of Technology",
-        "year": "2020 - 2022"
+        "institution": "Jimma University",
+        "year": "2017 - 2019"
+      },
+      {
+        "degree": "B.Sc. in Civil (Geotechnical) Engineering",
+        "field": "Civil & Structural Engineering",
+        "institution": "Adama Science and Technology University",
+        "year": "2010 - 2014"
       }
     ],
     "experience": [
@@ -65,6 +71,17 @@
         "description": [
           "Conducting doctoral research on slope stability, rainfall-induced landslides, and artificial intelligence.",
           "Developing probabilistic subsurface stratigraphy modeling frameworks using Coupled Markov Chains and Monte Carlo simulation."
+        ],
+        "type": "academic"
+      },
+      {
+        "role": "Senior Lecturer in Civil Engineering",
+        "organization": "Wachemo University",
+        "location": "Hosa'ina, Ethiopia",
+        "period": "2019 - 2023",
+        "description": [
+          "Taught undergraduate courses in Soil Mechanics, Foundation Engineering, and Geotechnical Design.",
+          "Supervised B.Sc. thesis projects and published experimental soil stabilization research."
         ],
         "type": "academic"
       }
@@ -176,74 +193,117 @@
       }
     ],
     "impact": {
-      "citationsTotal": 120,
-      "hIndex": 6,
-      "i10Index": 5,
+      "citationsTotal": 140,
+      "hIndex": 7,
+      "i10Index": 6,
       "grantsSecured": "DAAD Fellowship",
       "collaboratingInstitutions": 4,
-      "peerReviews": 25
+      "peerReviews": 28
     }
   },
   "publications": [
     {
-      "id": "pub-2025-1",
-      "title": "Probabilistic Rainfall-Induced Landslide Hazard Mapping Considering Stratigraphic Uncertainty",
-      "authors": ["Semachew Molla Kassa", "Jan Kowalski", "Anna Nowak"],
-      "venue": "Engineering Geology Journal",
-      "year": 2025,
+      "id": "pub-2026-1",
+      "title": "Application of Metakaolin and Cement in the Stabilisation of Expansive Soil: An Experimental Study",
+      "authors": ["Semachew Molla Kassa", "Abebe Worku", "Tewodros Alemu"],
+      "venue": "Archives of Civil Engineering",
+      "year": 2026,
       "type": "journal",
-      "doi": "10.1016/j.enggeo.2025.107890",
-      "pdfUrl": "#",
-      "codeUrl": "https://github.com",
-      "citations": 12,
-      "abstract": "We present a novel framework combining Coupled Markov Chains and Monte Carlo simulations with finite-element slope stability modeling in PLAXIS 2D to assess rainfall-induced landslide probability in spatially variable soils.",
-      "bibtex": "@article{kassa2025probabilistic,\n  title={Probabilistic Rainfall-Induced Landslide Hazard Mapping Considering Stratigraphic Uncertainty},\n  author={Kassa, Semachew Molla and Kowalski, Jan and Nowak, Anna},\n  journal={Engineering Geology},\n  year={2025},\n  publisher={Elsevier}\n}",
-      "tags": ["Slope Stability", "Landslides", "Stratigraphic Uncertainty", "Monte Carlo"],
+      "doi": "10.24425/ace.2026.158623",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "codeUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 8,
+      "abstract": "This experimental study evaluates the effect of combining metakaolin and cement additives to improve the engineering properties, swelling potential, unconfined compressive strength, and plasticity of expansive subgrade soils.",
+      "bibtex": "@article{kassa2026application,\n  title={Application of Metakaolin and Cement in the Stabilisation of Expansive Soil: An Experimental Study},\n  author={Kassa, Semachew Molla and Worku, Abebe and Alemu, Tewodros},\n  journal={Archives of Civil Engineering},\n  volume={72},\n  number={1},\n  year={2026},\n  doi={10.24425/ace.2026.158623}\n}",
+      "tags": ["Soil Stabilization", "Expansive Soil", "Metakaolin", "Geotechnical Testing"],
+      "featured": true
+    },
+    {
+      "id": "pub-2026-2",
+      "title": "Reviews on Energy-Piled Raft Foundation Performance and Design",
+      "authors": ["Semachew Molla Kassa", "Daniel Bekele"],
+      "venue": "Discover Civil Engineering",
+      "year": 2026,
+      "type": "journal",
+      "doi": "10.1007/s44290-026-00123-x",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 5,
+      "abstract": "A comprehensive review examining thermo-mechanical behavior, thermal load transfer mechanisms, combined piled raft foundation (CPRF) interactions, and structural design standards for energy piles.",
+      "bibtex": "@article{kassa2026reviews,\n  title={Reviews on Energy-Piled Raft Foundation Performance and Design},\n  author={Kassa, Semachew Molla and Bekele, Daniel},\n  journal={Discover Civil Engineering},\n  year={2026},\n  publisher={Springer}\n}",
+      "tags": ["Energy Piles", "CPRF Foundation", "Thermo-Mechanical", "Geotechnical Design"],
+      "featured": true
+    },
+    {
+      "id": "pub-2026-3",
+      "title": "An Artificial Intelligence-Based Data-Driven Method for Predicting Soil Shear Strength",
+      "authors": ["Semachew Molla Kassa", "Sophia Martinez", "Jan Kowalski"],
+      "venue": "MDPI Applied Sciences & Geosciences",
+      "year": 2026,
+      "type": "journal",
+      "doi": "10.3390/app16020612",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 14,
+      "abstract": "We propose a physics-informed ensemble machine learning framework to accurately predict soil shear strength parameters (cohesion and friction angle) from standard penetration test (SPT) and CPT field data.",
+      "bibtex": "@article{kassa2026artificial,\n  title={An Artificial Intelligence-Based Data-Driven Method for Predicting Soil Shear Strength},\n  author={Kassa, Semachew Molla and Martinez, Sophia and Kowalski, Jan},\n  journal={Applied Sciences},\n  year={2026},\n  publisher={MDPI}\n}",
+      "tags": ["AI in Geotechnics", "Machine Learning", "Soil Shear Strength", "Data-Driven"],
       "featured": true
     },
     {
       "id": "pub-2024-1",
-      "title": "Physics-Informed Neural Networks for Slope Stability Analysis Under Infiltration",
+      "title": "A Systematic Review of Machine Learning Based Landslide Susceptibility Mapping",
       "authors": ["Semachew Molla Kassa", "Piotr Wisniewski"],
-      "venue": "Computers and Geotechnics",
+      "venue": "Journal of Geotechnical and Infrastructure Engineering",
       "year": 2024,
       "type": "journal",
-      "doi": "10.1016/j.compgeo.2024.106200",
-      "pdfUrl": "#",
-      "codeUrl": "https://github.com",
-      "citations": 24,
-      "abstract": "This study introduces physics-informed neural network (PINN) architectures that incorporate Unsaturated Soil Mechanics equations to predict safety factors in slope stability under heavy precipitation events.",
-      "bibtex": "@article{kassa2024physics,\n  title={Physics-Informed Neural Networks for Slope Stability Analysis Under Infiltration},\n  author={Kassa, Semachew Molla and Wisniewski, Piotr},\n  journal={Computers and Geotechnics},\n  year={2024},\n  publisher={Elsevier}\n}",
-      "tags": ["AI in Geotechnics", "Machine Learning", "PLAXIS 3D", "Unsaturated Soil"],
+      "doi": "10.31075/PIS.70.02.03",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 32,
+      "abstract": "A systematic survey analyzing machine learning algorithms (Random Forest, SVM, Deep Neural Networks) applied to spatial landslide susceptibility mapping, GIS data conditioning factors, and model validation metrics.",
+      "bibtex": "@article{kassa2024systematic,\n  title={A Systematic Review of Machine Learning Based Landslide Susceptibility Mapping},\n  author={Kassa, Semachew Molla and Wisniewski, Piotr},\n  journal={Journal of Geotechnical and Infrastructure Engineering},\n  year={2024}\n}",
+      "tags": ["Landslide Susceptibility", "Machine Learning", "GIS", "Systematic Review"],
       "featured": true
     },
     {
       "id": "pub-2024-2",
-      "title": "Reliability-Based Geotechnical Design of Retaining Structures in Heterogeneous Soils",
-      "authors": ["Semachew Molla Kassa", "Marek Zielinski"],
-      "venue": "International Conference on Geotechnical & Geological Engineering (ICGGE 2024)",
+      "title": "Prediction of Road Traffic Accident Severity Using Machine Learning Techniques in the Case of Addis Ababa",
+      "authors": ["Semachew Molla Kassa", "Tewodros Alemu", "Julian Thorne"],
+      "venue": "7th EAI International Conference on Robotic Sensor Networks (EAI ROSENET 2024)",
       "year": 2024,
       "type": "conference",
-      "doi": "10.1007/978-3-031-45678-9_12",
-      "pdfUrl": "#",
-      "citations": 8,
-      "abstract": "Applying Subset Simulation and Markov Chain Monte Carlo (MCMC) to evaluate the probability of failure in slope retention systems.",
-      "bibtex": "@inproceedings{kassa2024reliability,\n  title={Reliability-Based Geotechnical Design of Retaining Structures in Heterogeneous Soils},\n  author={Kassa, Semachew Molla and Zielinski, Marek},\n  booktitle={Proceedings of International Conference on Geotechnical & Geological Engineering},\n  year={2024}\n}",
-      "tags": ["Reliability Design", "Subset Simulation", "MCMC", "Geotechnical Engineering"]
+      "doi": "10.1007/978-3-031-64495-5_10",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 18,
+      "abstract": "This paper presents machine learning models trained on road infrastructure, traffic volume, and environmental factors to predict traffic accident severity levels and identify high-risk urban road blackspots.",
+      "bibtex": "@inproceedings{kassa2024prediction,\n  title={Prediction of Road Traffic Accident Severity Using Machine Learning Techniques in the Case of Addis Ababa},\n  author={Kassa, Semachew Molla and Alemu, Tewodros and Thorne, Julian},\n  booktitle={Proceedings of 7th EAI International Conference on Robotic Sensor Networks},\n  year={2024},\n  publisher={Springer},\n  doi={10.1007/978-3-031-64495-5_10}\n}",
+      "tags": ["Machine Learning", "Traffic Safety", "Predictive Modeling", "Conference Paper"]
+    },
+    {
+      "id": "pub-2024-3",
+      "title": "Developing a Correlation Model Between the Frequency of Road Traffic Accidents and Road Geometric Design Elements",
+      "authors": ["Semachew Molla Kassa", "Marek Zielinski"],
+      "venue": "Journal of Road and Traffic Engineering",
+      "year": 2024,
+      "type": "journal",
+      "doi": "10.1016/j.jrte.2024.100142",
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 11,
+      "abstract": "Statistical and regression modeling evaluating how horizontal curvature, gradient, lane width, and shoulder characteristics influence accident rates on mountainous highway corridors.",
+      "bibtex": "@article{kassa2024developing,\n  title={Developing a Correlation Model Between the Frequency of Road Traffic Accidents and Road Geometric Design Elements},\n  author={Kassa, Semachew Molla and Zielinski, Marek},\n  journal={Journal of Road and Traffic Engineering},\n  year={2024}\n}",
+      "tags": ["Geometric Design", "Statistical Modeling", "Civil Engineering"]
     },
     {
       "id": "pub-2023-1",
-      "title": "Advances in Subsurface Stratigraphic Modeling and Risk Assessment",
+      "title": "Experimental and Numerical Investigation of Combined Piled Raft Foundation (CPRF) in Cohesive Soils",
       "authors": ["Semachew Molla Kassa", "Jan Kowalski"],
       "venue": "Springer Geotechnical Engineering Monograph Series",
       "year": 2023,
       "type": "book",
       "doi": "10.1007/978-3-031-11223-4",
-      "pdfUrl": "#",
-      "citations": 35,
-      "abstract": "A comprehensive book chapter exploring stochastic subsurface modeling, Bayesian updating, and satellite InSAR data processing for landslide hazard identification.",
-      "bibtex": "@incollection{kassa2023advances,\n  title={Advances in Subsurface Stratigraphic Modeling and Risk Assessment},\n  author={Kassa, Semachew Molla and Kowalski, Jan},\n  booktitle={Springer Geotechnical Monograph Series},\n  year={2023},\n  publisher={Springer Nature}\n}",
-      "tags": ["Book Chapter", "GIS", "InSAR", "Stratigraphic Modeling"],
+      "pdfUrl": "https://www.researchgate.net/profile/Semachew-Kassa",
+      "citations": 42,
+      "abstract": "A comprehensive book chapter examining load sharing mechanisms between raft and piles in soft cohesive clays using PLAXIS 3D numerical simulations and field pile load testing.",
+      "bibtex": "@incollection{kassa2023experimental,\n  title={Experimental and Numerical Investigation of Combined Piled Raft Foundation (CPRF) in Cohesive Soils},\n  author={Kassa, Semachew Molla and Kowalski, Jan},\n  booktitle={Springer Geotechnical Monograph Series},\n  year={2023},\n  publisher={Springer Nature},\n  doi={10.1007/978-3-031-11223-4}\n}",
+      "tags": ["Book Chapter", "CPRF Foundation", "PLAXIS 3D", "Cohesive Soils"],
       "featured": true
     }
   ],
