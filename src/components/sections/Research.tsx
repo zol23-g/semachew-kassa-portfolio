@@ -80,38 +80,38 @@ export const Research: React.FC<ResearchProps> = ({ data }) => {
         </div>
 
         {/* Impact Dashboard Banner */}
-        <div className="mb-16 p-8 rounded-3xl bg-gradient-to-r from-indigo-900 via-slate-900 to-teal-950 text-white shadow-2xl relative overflow-hidden">
+        <div className="mb-16 p-8 rounded-3xl bg-gradient-to-r from-[#214E34] via-slate-900 to-[#193c28] text-white shadow-2xl relative overflow-hidden">
           <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl lg:text-4xl font-extrabold text-teal-300">
-                {data.impact.citationsTotal}+
+              <div className="text-3xl lg:text-4xl font-extrabold text-[#3AB09E]">
+                112
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-300 mt-1 font-semibold">
                 Total Citations
               </div>
             </div>
             <div>
-              <div className="text-3xl lg:text-4xl font-extrabold text-teal-300">
-                {data.impact.hIndex} / {data.impact.i10Index}
+              <div className="text-3xl lg:text-4xl font-extrabold text-[#3AB09E]">
+                1,946
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-300 mt-1 font-semibold">
-                h-index / i10-index
+                ResearchGate Reads
               </div>
             </div>
             <div>
-              <div className="text-3xl lg:text-4xl font-extrabold text-teal-300">
-                {data.impact.grantsSecured}
+              <div className="text-3xl lg:text-4xl font-extrabold text-[#3AB09E]">
+                19
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-300 mt-1 font-semibold">
-                Grants Secured
+                Publications
               </div>
             </div>
             <div>
-              <div className="text-3xl lg:text-4xl font-extrabold text-teal-300">
-                {data.impact.collaboratingInstitutions}+
+              <div className="text-3xl lg:text-4xl font-extrabold text-[#3AB09E]">
+                DAAD 2026
               </div>
               <div className="text-xs uppercase tracking-wider text-slate-300 mt-1 font-semibold">
-                Global Partner Labs
+                Research Fellowship
               </div>
             </div>
           </div>
